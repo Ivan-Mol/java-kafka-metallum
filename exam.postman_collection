@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "02f74452-3992-48e9-9b72-5b7de007e7be",
+		"name": "KafkaExam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32614084"
+	},
+	"item": [
+		{
+			"name": "kafka",
+			"item": [
+				{
+					"name": "sendBandToKafkaById",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/producer/band/72",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"producer",
+								"band",
+								"72"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendBandsToKafkaByPrefix",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/producer/bands/Slayer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"producer",
+								"bands",
+								"Slayer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "metallum",
+			"item": [
+				{
+					"name": "getBandByIdFromMetalArchivesAndAddToDb",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/metallum/band/72",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"metallum",
+								"band",
+								"72"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBandsFromMetalArchivesByName",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/metallum/bands/Slayer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"metallum",
+								"bands",
+								"Slayer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "producerDB",
+			"item": [
+				{
+					"name": "getAllFromDatabase",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/bands",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"bands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBandByIdFromDatabase",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/bands/72",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"bands",
+								"72"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
