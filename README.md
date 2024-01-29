@@ -15,8 +15,10 @@ With this service you can:
 
 ## Technologies used
 - SpringBoot
+- Docker
 - Kafka
 - KafkaDrop
 - Zookeeper
 - H2
 - Lombok
+
