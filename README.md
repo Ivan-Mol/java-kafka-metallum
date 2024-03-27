@@ -1,4 +1,4 @@
-# Kafka Examle Services
+# Kafka Example Services
 
 Description:
 -
